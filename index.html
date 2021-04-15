@@ -34,41 +34,42 @@
         :root {
             --hstep: 160px;
             --vstep: 120px;
+            --angle: 180deg;
         }
  
         #a2 {
-            transform: translate(0px, -120px);
+            transform: translate(0px, calc( (-1)*var(--vstep) ));
         }
         #a4 {
-             transform: translate(160px,-360px );
+             transform: translate(var(--hstep),calc( (-3)*var(--vstep) ) );
         }
         #b2 {
-            transform: rotate(180deg) translate(0px,-120px );
+            transform: rotate(var(--angle)) translate(0px,calc( (-1)*var(--vstep) ));
 
         }
         #b3 {
-            transform: rotate(180deg);
+            transform: rotate(var(--angle));
         }
         #c1 {
-            transform: translate(-480px,120px);
+            transform: translate(calc((-3)*var(--hstep)),var(--vstep));
         }
         #c2,
         #c3 {
-            transform: translate(160px, 0px);
+            transform: translate(var(--hstep), 0px);
         }
         #c4{
-            transform: translate(160px,0px);
+            transform: translate(var(--hstep),0px);
         }
         #b4 {
-            transform: translate(0px, -120px);
+            transform: translate(0px, calc( (-1)*var(--vstep) ));
         }
 
         #d3 {
-            transform: translate(-160px, 0px);
+            transform: translate(calc((-1)*var(--hstep)), 0px);
         }
 
         #d4 {
-            transform: translate(0px, 360px);
+            transform: translate(0px, calc( 3*var(--vstep) ));
         }
 
         /* << SOLUTION: CODE ENDS HERE */
